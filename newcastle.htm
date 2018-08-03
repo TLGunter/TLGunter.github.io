@@ -3,14 +3,14 @@
 <head>
 <link rel="stylesheet" type="text/css" href="Classes/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="icon" href="Kangaroo.png">
-<title>Aussie Cities</title>
+<link rel="icon" href="Resources/Kangaroo.png">
+<title>Newcastle</title>
 <script type="text/javascript" src="Classes/script.js"></script>
 </head>
 <body>
 	
 <div class="navbar">
-  <a href="#home">Home</a>
+  <a href="index.htm">Home</a>
   <div class="dropdown">
     <button class="dropbtn">Explore   
       <i class="fa fa-caret-down"></i>
@@ -33,51 +33,7 @@
 	<img src="Resources/Newcastle.jpg" style="bottom:500;" alt="sydney boi" >
 	<div class="sidebox">
 	<h1>Video:</h1>
-	<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-    <div id="player" style="margin-left: 12px"></div>
-
-    <script>
-      // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '200',
-          width: '420',
-          videoId: 'ukQnPrxR4Cg',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
-
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 301000);
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
-    </script>
+		<iframe width="320" height="180" src="https://www.youtube.com/embed/ukQnPrxR4Cg?autoplay=1" style="margin-left: 20px;"></iframe>
 	</div>
 	<h2 style="color:white;">Newcastle</h2>
 	<p style="color:white; font-size: 1.2em;">The Newcastle metropolitan area is the second most populated area in the Australian state of New South Wales and includes most of the Newcastle and Lake Macquarie local government areas. It is the hub of the Greater Newcastle area which includes most parts of the local government areas of City of Newcastle, City of Lake Macquarie, City of Cessnock, City of Maitland and Port Stephens Council. Located 162 kilometres north-northeast of Sydney, at the mouth of the Hunter River, it is the predominant city within the Hunter Region. Famous for its coal, Newcastle is the largest coal exporting harbour in the world, exporting 159.9 million tonnes of coal in 2017.Beyond the city, the Hunter Region possesses large coal deposits. Geologically, the area is located in the central-eastern part of the Sydney basin.</p>
