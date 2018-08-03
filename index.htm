@@ -52,7 +52,7 @@ function move() {
 	var pic = document.getElementById("main");
 	pic.src = allPics[iteration];
 	document.getElementById('pleasework').childNodes[0].nodeValue="Visit "+names[iteration];
-	document.getElementById('PLEASEWORK').href = names[iteration]+".htm";
+	document.getElementById('PLEASEWORK').href = names[iteration].toLowerCase()+".htm";
 	iteration++;
 	if(iteration == 9){iteration = 0}
 	setTimeout(move, 5000);
